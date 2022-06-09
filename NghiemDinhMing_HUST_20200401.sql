@@ -99,7 +99,8 @@ SELECT Host,Count(HouseID) as HouseNumber
 FROM House
 Group BY Host;
 
-CREATE PROCEDURE ListContract @Money money
+GO
+CREAGOTE PROCEDURE ListContract @Money money
 AS
 SELECT * FROM Contract 
 JOIN House ON Contract.HouseID = House.HouseID
